@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="agGridWidget.widget.agGridWidget" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>agGridWidget</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="gridDataJSON" type="attribute">
+            <caption>Grid Data</caption>
+            <category>Grid Configuration</category>
+            <description>Use this JSON string to pass data to ag-grid</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+    </properties>
+</widget>
+
