@@ -6,6 +6,7 @@
     <icon />
 
     <properties>
+       
         <property key="gridDataJSON" type="attribute">
             <caption>Grid Data</caption>
             <category>Grid Configuration</category>
@@ -14,6 +15,14 @@
                 <attributeType name="String" />
             </attributeTypes>
         </property>
+
+    <property key="allowSort" type="boolean" defaultValue="true">
+ <caption>Allow Grid Sorting?</caption>
+ <category>Grid Configuration</category>
+ <description>Toggle Column Sorting</description>
+</property>
+
+
     </properties>
 </widget>
 
