@@ -121,13 +121,23 @@ define([
                     {name: 'Kevin', role: 'Manager'}
                 ]
             };
-*/ var inputJSON = obj.get(
-                    this.gridDataJSON
-                );
+*/
+
+                var inputJSON = obj.get(this.gridDataJSON);
                 var gridOptions = JSON.parse(inputJSON);
+
                 if (this.allowSort) {
-                    gridOptions.defaultColDef = { sortable: true };
+                    gridOptions.defaultColDef = {
+                        sortable: true,
+                        filter: true
+                    };
+                } else {
+                    gridOptions.defaultColDef = { filter: true };
                 }
+
+                gridOptions.animateRows= true;
+                gridOptions.enableRangeSelection= true;
+
                 new agGrid.Grid(gridDiv, gridOptions);
                 this._contextObj = obj;
                 this._resetSubscriptions();
